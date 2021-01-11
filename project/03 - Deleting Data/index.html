@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deleting Data</title>
+  <link rel = 'stylesheet' href = '../../css/index.css'>
+</head> 
+<body>
+  <div class="panels-container">
+    <div class="panel">
+      <div class="panel-preview">
+        <h6>GRC Seminar</h6>
+        <h2>Deleting Data</h2>
+        <a href="../01 - Adding Data/index.html">View all employee >> <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div class="panel-info">
+        <h6>Enter Employee ID Below:</h6>
+        <h2 class = 'employeeId' contenteditable="">Change this to Employee ID</h2>
+        <button class="btn">Delete Employee</button>
+      </div>
+    </div>
+  </div>
+
+  <div class = 'success-container'>
+    Successfully Removed
+  </div>
+  
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCfGAQCqbDYh3WnbEEccNLlNrdJmV_Ja3g",
+    authDomain: "grc-seminar-test.firebaseapp.com",
+    projectId: "grc-seminar-test",
+    storageBucket: "grc-seminar-test.appspot.com",
+    messagingSenderId: "682048571991",
+    appId: "1:682048571991:web:371b7f6dca9f39077ef112",
+    measurementId: "G-QZDR0HTBML"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="function-start.js"></script>
+</html>
